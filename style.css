@@ -1,27 +1,27 @@
 body {
   font-family: Times, serif;
+  color: #666D7B;
 }
 
 h1 {
-  color: #666D7B;
   font-weight: bold;
 }
 
-h2, h3 {
-  color: #666D7B;
-}
 
 h4{
-  color: black;
   font-size: 25px;
+  margin: 0 0 8px 0;
 }
+
 a {
   text-decoration: none;
   color: #666D7B;
+  font-family: 'Baloo Chettan', cursive;
 }
 
 a:hover {
   color: black;
+  font-style: bold;
 }
 
 p {
@@ -42,10 +42,20 @@ ul li{
 }
 
 .base {
-  margin: 25px;
+  margin: 20px auto;
+  width: 700px;
   padding: 15px;
   border-radius: 4px;
   text-align: center;
+}
+
+.white {
+  background-color: white;
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px;
+  margin: 15px auto;
 }
 
 .pic {
@@ -61,8 +71,21 @@ ul li{
   background-color: #F0E6A6;
 }
 
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0
+}
+
+.link {
+  margin: 5px;
+}
 .place {
   background-color: #D0F4DF;
+}
+
+.contact {
+   background-color: #FDFDA9;
 }
 
 .last {
@@ -76,4 +99,46 @@ ul li{
 #subject {
   width: 200px;
   height: 50px;
+}
+
+.favorite {
+  font-size: 25px;
+  color: #49BEAA;
+  padding:30px;
+}
+
+@media (max-width: 960px) {
+  .base {
+    width: 600px;
+  }
+  .pic {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 720px) {
+  .base {
+    width: 500px;
+  }
+  .pic {
+    height: 200px;
+    width: 300px;
+  }
+  .white {
+    width: 400px;
+  }
+  .links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .base {
+    width: 300px;
+  }
+
+  .white {
+    width: 200px;
+  }
 }

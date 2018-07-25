@@ -4,32 +4,35 @@
   <meta charset="utf-8">
   <title>My profile</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
 <body>
   <div class="container base">
-    <h1>Welcome to my Website</h1>
-    <h2>My Profile</h2>
+    <h1>Welcome to My Profile</h1>
     <img src="images/profile.jpg" alt="" class="pic">
+    <div class="white">
     <h3>Name: Sachi Saito</h3>
     <h3>DOB: 10/12/1987</h3>
-    <h3>FROM: Fukuoka in Japan</h3>
-    <h3>Profession: Pre Programmer</h3>
+    <h3>FROM: Fukuoka</h3>
+    <h3>Profession:  Programmer</h3>
     <p>I currently live in Rio de Janeiro.<br> My hobby is traveling abroad. I went to 50 countries within 10 years.<br> I'll introduce top 3 of my favorite places.</p>
+    </div>
   </div>
   <div class="sns base">
-    <ul>
-    <li>
+    <ul class="links">
+    <li class="link">
       <a href="https://www.facebook.com/sachi.kitajima" target = "_blank">
-        <i class="fab fa-facebook-f"></i> Facebook
+        <i class="fab fa-facebook-square"></i> Facebook
       </a>
       </li>
-      <li>
+      <li class="link">
         <a href="https://www.linkedin.com/in/sachi-saito-riodejaneiro/" target = "_blank">
-        <i class="fab fa-linkedin-in"></i> Linkedin
+        <i class="fab fa-linkedin"></i> Linkedin
       </a>
       </li>
-      <li>
+      <li class="link">
       <a href="https://www.instagram.com/sachisaito1210/?hl=ja" target = "_blank">
         <i class="fab fa-instagram"></i> Instagram
       </a>
@@ -40,27 +43,48 @@
 　  <h4>My Favorite Places</h4>
     <table>
       <tbody>
-        <tr>Salar de Uyuni</tr><br>
+        <tr><span class="favorite">Salar de Uyuni</span></tr><br>
         <img src="images/uyuni.jpg" alt="" class="pic">
-        <p>Salar de Uyuni is the worlds largest salt flat in Bolivia. During rainy season, we can see so beautiful mirroring views.</p>
-        <tr>Abu Dhabi Desert</tr><br><img src="images/desert.jpg" alt="" class="pic">
-        <p>Abu Dhabi Desert Safari with Camel Ride is an amzing experience.</p>
-        <tr>Cape Town</tr><br><img src="images/husband.jpg" alt="" class="pic">
-        <p>Cape Town in South Africa was a rich natural environment with the best climate.</p>
+        <p>Salar de Uyuni is the worlds largest salt flat in Bolivia.<br>During rainy season, we can see so beautiful mirroring views.</p>
+        <tr><span class="favorite">Abu Dhabi Desert</span></tr><br><img src="images/desert.jpg" alt="" class="pic">
+        <p>Abu Dhabi Desert Safari with Camel Ride is an amzing experience.<br>You can see beautiful sunrise and sunset!!</p>
+        <tr><span class="favorite">Cape Town</span></tr><br><img src="images/husband.jpg" alt="" class="pic">
+        <p>Cape Town in South Africa is a rich natural environment with the best climate.<br>Peaople and foods are so nice.</p>
       </tbody>
     </table>
   </div>
-  <div class="last base">
-    <p>If you have a question, contact me ↓</p>
-    <form action="action_page.php">
-    <label for="fname">Name</label><br>
-    <input type="text" id="name" name="name" placeholder="Your name.."><br>
-    <label for="subject">Subject</label><br>
-    <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+  <div class="base contact">
+    <p>If you have a question, please send me a message</p>
+    <form action="MAILTO:sachi1210@me.com" method="GET" enctype="text/plain">
+      <label for="fname">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name.."><br>
+      <label for="subject">Subject</label><br>
+      <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
     <input type="submit" value="Submit">
-  </form>
-</div>
-
+    </form>
+  </div>
+  <div class="base last">
+    <h2>About this page</h2>
+        This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>.<br><br>
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-share"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-star"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+ </div>
 
 </body>
 </html>
